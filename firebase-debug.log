@@ -1,0 +1,101 @@
+[debug] [2022-07-17T22:19:18.951Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T22:19:18.952Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-17T22:19:18.953Z] CLI Version:   11.2.2
+[debug] [2022-07-17T22:19:18.953Z] Platform:      win32
+[debug] [2022-07-17T22:19:18.953Z] Node Version:  v16.14.2
+[debug] [2022-07-17T22:19:18.954Z] Time:          Mon Jul 18 2022 05:19:18 GMT+0700 (Indochina Time)
+[debug] [2022-07-17T22:19:18.954Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T22:19:18.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T22:19:18.961Z] > authorizing via signed-in user (phoeunmony12@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MyWebProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-17T22:23:12.487Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/availableProjects pageSize=100
+[debug] [2022-07-17T22:23:15.676Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/availableProjects 200
+[debug] [2022-07-17T22:23:15.677Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/availableProjects [omitted]
+[debug] [2022-07-17T22:23:24.884Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/sanguine-healer-353407:addFirebase [none]
+[debug] [2022-07-17T22:23:28.756Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/sanguine-healer-353407:addFirebase 200
+[debug] [2022-07-17T22:23:28.757Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/sanguine-healer-353407:addFirebase {"name":"operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2"}
+[debug] [2022-07-17T22:23:28.761Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 [none]
+[debug] [2022-07-17T22:23:30.674Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 200
+[debug] [2022-07-17T22:23:30.675Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 {"name":"operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2"}
+[debug] [2022-07-17T22:23:31.185Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-07-17T22:23:31.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 [none]
+[debug] [2022-07-17T22:23:32.680Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 200
+[debug] [2022-07-17T22:23:32.680Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 {"name":"operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2"}
+[debug] [2022-07-17T22:23:33.688Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-07-17T22:23:33.688Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 [none]
+[debug] [2022-07-17T22:23:36.686Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 200
+[debug] [2022-07-17T22:23:36.687Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2 {"name":"operations/workflows/ODQ5MDJjYTUtM2IzZS00ODllLWI5M2UtZDExZGQ0MjU1MmY2","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"sanguine-healer-353407","projectNumber":"635824278994","displayName":"My First Project","name":"projects/sanguine-healer-353407","resources":{"hostingSite":"sanguine-healer-353407"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: sanguine-healer-353407
+[info]    - Project Name: My First Project
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/sanguine-healer-353407/overview
+[info] i  Using project sanguine-healer-353407 (My First Project) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-07-17T22:24:22.085Z] ----------------------------------------------------------------------
+[debug] [2022-07-17T22:24:22.087Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADMIN PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-17T22:24:22.087Z] CLI Version:   11.2.2
+[debug] [2022-07-17T22:24:22.088Z] Platform:      win32
+[debug] [2022-07-17T22:24:22.088Z] Node Version:  v16.14.2
+[debug] [2022-07-17T22:24:22.089Z] Time:          Mon Jul 18 2022 05:24:22 GMT+0700 (Indochina Time)
+[debug] [2022-07-17T22:24:22.089Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-17T22:24:22.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-17T22:24:22.095Z] > authorizing via signed-in user (phoeunmony12@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\MyWebProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-07-17T22:24:49.803Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-07-17T22:24:49.803Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"0775","name":"Portfolio"}
+[debug] [2022-07-17T22:24:51.810Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2022-07-17T22:24:51.810Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"},{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2022-07-17T22:24:53.920Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\ADMIN PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ADMIN PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
