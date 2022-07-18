@@ -57,7 +57,7 @@
                 <div class="column right">
                     <div class="text">I'm Mario and I'm a <span class="typing-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nemo sit voluptatibus obcaecati placeat amet ipsam. Facilis provident eligendi assumenda laborum perferendis facere veniam quaerat ipsa reprehenderit. Cum magnam nulla natus ratione ut veritatis, repudiandae sed repellat, praesentium cupiditate dolore hic non quod dicta blanditiis. Natus expedita eum harum tenetur excepturi ullam molestiae eaque modi commodi voluptatum dolorem soluta, quae delectus consectetur, libero quo distinctio itaque? Corrupti non maiores, veniam nesciunt repudiandae amet suscipit cum earum dolore facilis, architecto quisquam sed! Qui iusto facere inventore eius ab minus sint accusamus voluptatem fuga. Eligendi consectetur reiciendis deleniti quod porro! Itaque repellendus officia doloribus quod incidunt, iste est hic temporibus dignissimos, facilis asperiores illo fugit eveniet totam repellat recusandae consequatur nisi eligendi harum, velit commodi! Officia laboriosam quas quam ipsa, nemo similique, pariatur nisi, iusto delectus laudantium omnis earum quasi illo alias possimus necessitatibus? Unde deleniti facere accusantium laborum labore saepe culpa soluta itaque, perspiciatis, magnam aspernatur doloremque molestiae rem ut eveniet ullam, libero adipisci expedita optio mollitia. Voluptatum placeat mollitia nisi quas consequatur pariatur, aliquam ut, omnis quidem nemo, sint soluta? Placeat porro excepturi pariatur hic laboriosam omnis quos, dolores, accusantium, ipsa doloremque suscipit doloribus quidem fugiat qui voluptates assumenda! Cum.</p>
-                    <a href="#">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1PNxBj8bVf8QB9RuV_ip4g7raRzuqDSeN/view?usp=sharing">Download CV</a>
                 </div>
             </div>
            
@@ -238,21 +238,20 @@
                     </div>
                     <div class="column right">
                         <div class="text">Message me</div>
-                        <form action="#">
+                        <form onsubmit="sendEmail(); reset(); return false">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" id="name" placeholder="Name" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="email" required>
-                                </div>
-                                  
+                                    <input type="email" id="email" placeholder="Email" required>
+                                </div>      
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="subject" required>
+                                <input type="text" id="message" placeholder="Message" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Description" required></textarea>
+                                <textarea id="description" cols="30" rows="10" placeholder="Description" required></textarea>
                             </div>
                             <div class="button">
                                 <button type="submit">Send Message</button>
@@ -269,6 +268,22 @@
          </footer>
 
     <script src="./script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticgmail.com",
+                Username : "phoeunmony12@gmail.com",
+                Password : "70A78DD41D2C2DE209C084E56B8BC5CD1643",
+                To : 'phoeunmony2020@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : document.getElementById("message").value,
+                Body : "Name: " + document.getElementById("name").value  + "<br> Email: " + document.getElementById("email").value + + "<br> Description: " + document.getElementById("description").value
+            }).then(
+              message => alert(message)
+            );
+        }    
+    </script>
     
 </body>
 </html>

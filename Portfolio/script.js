@@ -67,3 +67,5 @@ $(document).ready(function(){
     
 });
 
+// send message script without backend
+
